@@ -7,9 +7,9 @@ const HOSTNAME = '0.0.0.0';
 var app = express();
 app.use(bodyParser.json());
 app.get('/',(request,response) => {
-	response.send('<h1>Hola mundo por 8080</h1>');
+	response.send('<h1>Hola Mundo por 8080</h1>');
 });
 
 app.listen(PORT,HOSTNAME, () => {
-	console.log('El servidor está corriendo en http://' + HOSTNAME + ':' + PORT);    
+	console.log('El servidor se está ejecutando en://' + HOSTNAME + ':' + PORT);    
 });
