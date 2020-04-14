@@ -7,7 +7,7 @@ const HOSTNAME = '0.0.0.0';
 var app = express();
 app.use(bodyParser.json());
 app.get('/',(request,response) => {
-	response.send('<h1>Hola mundo, por puerto 8080</h1>');
+	response.send('<h1>Hola mundo por puerto 8080</h1>');
 });
 
 app.listen(PORT,HOSTNAME, () => {
