@@ -16,6 +16,11 @@ app.get('/prueba',(request,response) => {
 	response.sendFile(path.join(__dirname));
 });
 
+const server = http.createServer(app);
+server.listen(port, () => console.log('App running on: http://localhost:${port}'));
+
+/*
 app.listen(PORT,HOSTNAME, () => {
 	console.log('El servidor se está ejecutando en://' + HOSTNAME + ':' + PORT);    
 });
+*/
