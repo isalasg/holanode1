@@ -17,7 +17,7 @@ app.get('/prueba',(request,response) => {
 });
 
 const server = http.createServer(app);
-server.listen(port, () => console.log('App running on: http://localhost:${port}'));
+server.listen(PORT, () => console.log('App running on: http://localhost:${PORT}'));
 
 /*
 app.listen(PORT,HOSTNAME, () => {
